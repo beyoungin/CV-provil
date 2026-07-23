@@ -1,6 +1,195 @@
-  <style> 
-  p { margin-bottom: 15px; color: #ccc; }
-  </style>
-  <div>
-    <p>titit</p>
-  </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pendidikan - MA Al-Hidayah Basmol</title>
+
+    <!-- 1. PANGGIL IKON (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 2. STYLESHEET (CSS) -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121216;
+            color: #e1e1e6;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #1e1e24;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #2e2e36;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            border-bottom: 1px solid #2e2e36;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            color: #fbc02d;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header .subtitle {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .section-block {
+            margin-bottom: 25px;
+        }
+
+        .section-block h2 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-left: 3px solid #fbc02d;
+            padding-left: 10px;
+        }
+
+        .section-block p {
+            color: #ccc;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* List Prestasi & Kegiatan */
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .feature-list li {
+            background-color: #121216;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #2e2e36;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .feature-list li i {
+            color: #fbc02d;
+            font-size: 1.1rem;
+            margin-top: 3px;
+        }
+
+        .feature-list li strong {
+            color: #fff;
+        }
+
+        /* Tombol Kembali */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #fbc02d;
+            color: #121216;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-back:hover {
+            background-color: #fbd04d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            
+            <!-- Header Sekolah -->
+            <div class="header">
+                <h1><i class="fa-solid fa-school"></i> MA Al-Hidayah Basmol</h1>
+                <div class="subtitle">
+                    <i class="fa-regular fa-calendar"></i> Periode Studi: 2018 - 2021 | Jurusan: MIPA
+                </div>
+            </div>
+
+            <!-- Profil Sekolah -->
+            <div class="section-block">
+                <h2>Profil Sekolah</h2>
+                <p>
+                    Madrasah Aliyah (MA) Al-Hidayah Basmol merupakan lembaga pendidikan tingkat menengah keatas terpadu yang memadukan kurikulum pendidikan nasional dengan nilai-nilai keagamaan Islam. Sekolah ini berfokus pada pembentukan karakter siswa yang unggul secara akademik, memiliki kedalaman spiritual, serta berakhlakul karimah.
+                </p>
+            </div>
+
+            <!-- Jurusan & Pembelajaran MIPA -->
+            <div class="section-block">
+                <h2>Penjurusan MIPA</h2>
+                <p>
+                    Mengambil peminatan Matematika dan Ilmu Pengetahuan Alam (MIPA). Pembelajaran berfokus pada pengembangan logika berpikir analitis, pemahaman konsep sains, matematis, serta penerapannya dalam kehidupan sehari-hari maupun integrasinya dengan nilai keislaman.
+                </p>
+            </div>
+
+            <!-- Prestasi & Pengalaman Akademik -->
+            <div class="section-block">
+                <h2>Prestasi & Program Unggulan</h2>
+                <ul class="feature-list">
+                    <li>
+                        <i class="fa-solid fa-trophy"></i>
+                        <div>
+                            <strong>Juara 3 Lomba Hafalan Kitab</strong>
+                            <p style="margin:0; font-size: 0.9rem; color: #aaa;">Berhasil meraih peringkat ke-3 dalam kompetisi hafalan kitab tingkat sekolah/daerah.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book-quran"></i>
+                        <div>
+                            <strong>Program Tahfidz Al-Qur'an</strong>
+                            <p style="margin:0; font-size: 0.9rem; color: #aaa;">Aktif mengikuti program pembinaan hafalan Al-Qur'an terstruktur selama masa sekolah.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-moon"></i>
+                        <div>
+                            <strong>Program Dasar Ilmu Falak & Astronomi Islam</strong>
+                            <p style="margin:0; font-size: 0.9rem; color: #aaa;">Mempelajari dasar perhitungan matematika astronomi untuk menghitung pergerakan rata-rata bulan (hisab) serta penentuan awal bulan Kamariah.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tombol Navigasi Kembali -->
+            <a href="index.html" class="btn-back">
+                <i class="fa-solid fa-arrow-left"></i> Kembali ke Profil Utama
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
